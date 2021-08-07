@@ -23,8 +23,8 @@ jobs:
           name: webpack artifacts
           path: public/
 
-  needs: build
   test: 
+    needs: build
     runs-on: ubuntu-latest
     strategy:
       matrix:
